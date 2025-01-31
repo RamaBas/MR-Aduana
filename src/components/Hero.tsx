@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ isVisible }) => {
         </p>
         <div className="flex justify-center md:justify-start">
           <button className="mt-6 bg-blue-500 text-white py-3 px-8 rounded-full font-semibold hover:bg-blue-600 transition">
-            Contáctanos
+            <a href="#contact">Contáctanos</a>
           </button>
         </div>
       </div>
