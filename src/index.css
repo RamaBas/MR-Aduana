@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #5DB4E0;
+  --background-light: #F5F5F5;
+  --text-color: #444;
+  --ws-color: #25d366;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  @apply bg-gray-100 text-text-default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-text-default;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Animaciones */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ws-color {
+  background-color:var(--ws-color);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Animación para el menú */
+.nav-link {
+  position: relative;
+  @apply text-text-default;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Títulos con subrayado */
+.title-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.title-underline::after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: var(--primary-blue);
+}
+
+/* Animaciones de scroll */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  .container {
+    @apply px-4;
+  }
+}
