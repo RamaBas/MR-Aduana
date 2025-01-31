@@ -19,6 +19,7 @@ const Header = () => {
           <ul className="flex space-x-6">
             <li><a href="#benefits" className="nav-link transition duration-300">Quienes Somos</a></li>
             <li><a href="#services" className="nav-link transition duration-300">Servicios</a></li>
+            <li><a href="#faq" className="nav-link transition duration-300">Preguntas Frecuentes</a></li>
             <li><a href="#contact" className="nav-link transition duration-300">Contacto</a></li>
           </ul>
         </nav>
@@ -31,6 +32,7 @@ const Header = () => {
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li><a href="#benefits" className="nav-link transition duration-300" onClick={toggleMenu}>Quienes Somos</a></li>
             <li><a href="#services" className="nav-link transition duration-300" onClick={toggleMenu}>Servicios</a></li>
+            <li><a href="#faq" className="nav-link transition duration-300" onClick={toggleMenu}>Preguntas Frecuentes</a></li>
             <li><a href="#contact" className="nav-link transition duration-300" onClick={toggleMenu}>Contacto</a></li>
           </ul>
         </div>
