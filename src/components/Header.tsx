@@ -12,7 +12,9 @@ const Header = () => {
     <div className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Package className="w-10 h-10 text-primary mr-3" />
+        <p class="flex items-center justify-center w-11 h-11 rounded-full bg-[#5DB4E0] text-white text-2xl font-bold">
+          MR
+        </p>
           <span className="text-2xl font-bold text-text-default">Servicios Aduaneros</span>
         </div>
         <nav className="hidden md:block">
