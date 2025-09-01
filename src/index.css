@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-blue: #5DB4E0;
-  --background-light: #F5F5F5;
+  --primary-blue: #04456f;
+  --background-light: #f5f5f5;
   --text-color: #444;
   --ws-color: #25d366;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   @apply bg-gray-100 text-text-default;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-bold text-text-default;
 }
 
@@ -38,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ws-color {
-  background-color:var(--ws-color);
+  background-color: var(--ws-color);
 }
 
 .animate-float {
@@ -52,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -73,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 3px;

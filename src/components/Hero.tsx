@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import contenedores from "../../assets/contenedores.jpg";
 
 interface HeroProps {
@@ -16,10 +16,10 @@ const Hero: React.FC<HeroProps> = ({ isVisible }) => {
       />
 
       {/* Sección de texto con diseño curvo */}
-      <div 
+      <div
         className="relative z-10 w-full md:w-1/2 h-full bg-gray-100 flex flex-col justify-center px-8 md:px-20 py-12 md:py-20"
         style={{
-          clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)'
+          clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)",
         }}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight text-center md:text-left">
@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ isVisible }) => {
           Asesoramiento y soluciones en tus operatorias aduaneras.
         </p>
         <div className="flex justify-center md:justify-start">
-          <button className="mt-6 bg-blue-500 text-white py-3 px-8 rounded-full font-semibold hover:bg-blue-600 transition">
+          <button className="mt-6 bg-[color:var(--primary-blue)] text-white py-3 px-8 rounded-full font-semibold hover:opacity-90 transition">
             <a href="#contact">Contáctanos</a>
           </button>
         </div>
