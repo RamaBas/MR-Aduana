@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import References from "./components/References";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -25,6 +26,7 @@ function App() {
       <Hero isVisible={isVisible} />
       <AboutUsSection />
       <Services />
+      <References />
       <FaqAccordion />
       <Contact />
       <WhatsAppButton />
