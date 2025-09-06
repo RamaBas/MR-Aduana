@@ -7,7 +7,11 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ isVisible }) => {
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] flex items-center">
+    <div
+      className={`relative w-full h-[500px] md:h-[600px] flex items-center transition-opacity duration-700 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       {/* Imagen de fondo */}
       <img
         src={contenedores}

@@ -1,10 +1,9 @@
 import React from "react";
-import { Linkedin, Instagram } from "lucide-react";
 import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-800 py-12">
+    <footer className="bg-background-light text-gray-800 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
