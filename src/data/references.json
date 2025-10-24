@@ -1,17 +1,17 @@
 [
   {
-    "image": "https://i.pravatar.cc/150?img=1",
-    "name": "Juan Pérez",
-    "message": "Excelente servicio, todo llegó a tiempo y sin problemas."
+    "image": "/assets/deAnchorena.jpg",
+    "name": "Emiliano De Anchorena",
+    "message": "Gracias a ustedes pude tener mi carga en el deposito en el momento que lo necesite. Un gusto trabajar con ustedes."
   },
   {
-    "image": "https://i.pravatar.cc/150?img=2",
-    "name": "María Gómez",
-    "message": "Muy profesionales y atentos, recomendados al 100%."
+    "image": "/assets/brezzi.png",
+    "name": "Distribuidora Brezzi",
+    "message": "La gestión fue impecable, los productos llegaron directo a depósito sin inconvenientes.."
   },
   {
-    "image": "https://i.pravatar.cc/150?img=3",
-    "name": "Luis Rodríguez",
-    "message": "Gracias a ellos pude importar mi mercadería sin complicaciones."
+    "image": "/assets/julieta.jpg",
+    "name": "Julieta Stuedher",
+    "message": "Gracias Mariano por la atención y tu buena labor, todo llegó en tiempo y forma."
   }
 ]

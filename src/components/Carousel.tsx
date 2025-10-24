@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface CarouselItem {
-  image: string;
+  image: string; // p.ej. "/assets/deAnchorena.png"
   name: string;
   message: string;
 }
@@ -13,7 +13,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const itemsPerPage = 3;
-  const totalPages = Math.ceil(items.length / itemsPerPage);
+  const totalPages = Math.max(1, Math.ceil(items.length / itemsPerPage));
   const [currentPage, setCurrentPage] = useState(0);
 
   const prevSlide = () => {
@@ -32,24 +32,29 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const currentItems = items.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div id="coments" className="relative w-full max-w-4xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         {currentItems.map((item, index) => (
           <div
-            key={index}
+            key={`${item.name}-${index}`}
             className="flex flex-col items-center"
           >
             <img
-              src={item.image}
+              src={item.image || defaultAvatar}
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src = defaultAvatar;
+              }}
               alt={item.name}
               className="w-24 h-24 rounded-full object-cover mb-4"
+              loading="lazy"
             />
             <p className="text-gray-600 mb-2">&quot;{item.message}&quot;</p>
             <p className="font-semibold text-text-default">{item.name}</p>
           </div>
         ))}
       </div>
-      {totalPages > 1 && (
+
+      {items.length > itemsPerPage && (
         <>
           <button
             onClick={prevSlide}

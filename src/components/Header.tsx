@@ -43,6 +43,11 @@ const Header = () => {
                 Contacto
               </a>
             </li>
+            <li>
+              <a href="#coments" className="nav-link transition duration-300">
+                Comentarios
+              </a>
+            </li>
           </ul>
         </nav>
         <button className="md:hidden text-text-default" onClick={toggleMenu}>
@@ -70,6 +75,11 @@ const Header = () => {
             <li>
               <a href="#contact" className="nav-link" onClick={toggleMenu}>
                 Contacto
+              </a>
+            </li>
+            <li>
+              <a href="#coments" className="nav-link" onClick={toggleMenu}>
+                Comentarios
               </a>
             </li>
           </ul>
