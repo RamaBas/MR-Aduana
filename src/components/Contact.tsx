@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background-light">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollAnimation>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 title-underline">
